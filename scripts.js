@@ -5,6 +5,9 @@ div.addEventListener("mousedown", function(event) {
    canMove = true;
 });
 
+document.body.addEventListener("mouseup", function(event) {
+    canMove = false;
+});
  
 document.body.addEventListener("mousemove", function(event) {
     if(canMove == true){
